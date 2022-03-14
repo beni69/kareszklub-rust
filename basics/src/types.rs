@@ -18,6 +18,7 @@ pub fn run() {
     let _z = 123 as u8;
     let _z = 123u8;
 
+    // max int values
     println!("max i32: {}", std::i32::MAX);
     println!("max i64: {}", std::i64::MAX);
     println!("max i128: {}", std::i128::MAX);
@@ -31,4 +32,8 @@ pub fn run() {
     let face = '\u{1F600}';
 
     println!("{:?}", (active, is_greater, ch, face));
+
+    // custom types
+    type MyType = (u8, f64, char);
+    let _my_type: MyType = (1, 2.5, 'a');
 }

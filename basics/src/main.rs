@@ -1,17 +1,17 @@
-pub mod arrays;
-pub mod cli;
-pub mod conditionals;
-pub mod enums;
-pub mod functions;
-pub mod loops;
-pub mod print;
-pub mod references;
-pub mod strings;
-pub mod structs;
-pub mod tuples;
-pub mod types;
-pub mod var;
-pub mod vectors;
+mod arrays;
+mod cli;
+mod conditionals;
+mod enums;
+mod functions;
+mod loops;
+mod print;
+mod references;
+mod strings;
+mod structs;
+mod tuples;
+mod types;
+mod var;
+mod vectors;
 
 fn main() {
     let fns: [(&str, fn()); 14] = [
