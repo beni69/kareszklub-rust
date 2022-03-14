@@ -1,2 +1,2 @@
 [workspace]
-members = ["converter"]
+members = ["basics", "converter"]

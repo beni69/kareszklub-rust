@@ -1,0 +1,22 @@
+// functions
+// note: no ; at the end of a statement means return
+
+pub fn run() {
+    greeting("hello", "tom");
+
+    let get_sum = add(5, 5);
+    println!("sum: {}", get_sum);
+
+    // closure
+    let n3: i32 = 10;
+    let add_nums = |n1: i32, n2: i32| n1 + n2 + n3; // access to outside variables
+    println!("closure sum: {}", add_nums(3, 3));
+}
+
+fn greeting(greet: &str, name: &str) {
+    println!("{} {}, nice to meet you!", greet, name);
+}
+
+fn add(n1: i32, n2: i32) -> i32 {
+    n1 + n2 // no ";" means return this value
+}
