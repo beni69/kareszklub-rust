@@ -1,3 +1,6 @@
+mod r#unsafe;
+
 fn main() {
-    println!("Hello, world!");
+    // println!("Hello, world!");
+    r#unsafe::run();
 }
