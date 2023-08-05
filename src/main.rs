@@ -1,3 +1,4 @@
+mod lifetime;
 mod r#unsafe;
 
 fn main() {
